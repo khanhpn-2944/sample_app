@@ -1,15 +1,15 @@
-<% provide(:title, t(".title")) %>
+<% provide :title, t(".title") %>
 <h1><%= t ".title" %></h1>
 <p>
   <%= t ".intro_1" %>
-  <%= link_to t(".rails_tutorial"), Settings.url.railstutorial %>
+  <%= link_to t(".rails_tutorial"), Settings.url.rails_tutorial %>
   <%= t ".intro_2" %>
-  <%= link_to t(".learn_enough"), Settings.url.learnenough %>
+  <%= link_to t(".learn_enough"), Settings.url.learn_enough %>
   <%= t ".intro_3" %>
-  <%= link_to t(".book"), Settings.url.railstutorial_book %>
+  <%= link_to t(".book"), Settings.url.rails_tutorial_book %>
   <%= t ".intro_4" %>
   <%= link_to t(".screencast"), Settings.url.screencasts %>
   <%= t ".intro_5" %>
-  <%= link_to t(".rails"), Settings.url.rubyonrails %>
+  <%= link_to t(".rails"), Settings.url.ruby_on_rails %>
   <%= t ".intro_6" %>
 </p>
