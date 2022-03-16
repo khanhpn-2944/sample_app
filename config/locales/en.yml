@@ -34,11 +34,18 @@ en:
   flash_user:
     welcome: "Welcome to the Sample App"
     not_found: "User not found"
+  flash_session:
+    create_fail: "Invalid email/password combination"
   layouts:
     header:
       sample_app: "sample_app"
       home: "Home"
       help: "Help"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
       log_in: "Log in"
     footer:
       rails_tutorial: "Ruby on Rails Tutorial"
@@ -85,6 +92,13 @@ en:
       title: "Sign up"
       confirmation_label: "Confirmation"
       submit_button: "Create my account"
+  sessions:
+    new:
+      title: "Log in"
+      remember_me: "Remember me on this computer"
+      submit_button: "Log in"
+      new_user: "New user? "
+      sign_up: "Sign up now!"
   shared:
     error_messages:
       intro_1: "The form contains "
