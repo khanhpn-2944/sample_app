@@ -1,5 +1,5 @@
 <% provide :title, t(".title") %>
-<h1><%= t ".title" %></h1>
+<h1><%= t ".h1" %></h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -20,5 +20,10 @@
 
       <%= f.submit t(".submit_button"), class: "btn btn-primary" %>
     <% end %>
+
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <%= link_to t(".change"), Settings.url.gravatar_email, target: "_blank" %>
+    </div>
   </div>
 </div>
