@@ -31,6 +31,8 @@ gem "i18n", "~> 1.10"
 
 gem "config", "~> 4.0"
 
+gem "figaro", "~> 1.2"
+
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 

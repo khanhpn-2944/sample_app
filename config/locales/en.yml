@@ -32,9 +32,9 @@
 en:
   default_title: "Ruby on Rails Tutorial Sample App"
   flash_user:
-    welcome: "Welcome to the Sample App"
     not_found: "User not found"
     log_in: "Please log in"
+    check_email: "Please check your email to activate your account"
     updated: "Profile updated"
     deleted: "User deleted"
     error: "Error"
@@ -42,7 +42,12 @@ en:
     not_user: "You are not the correct user"
     not_admin: "You are not an admin"
   flash_session:
+    not_found: "Email not found"
+    not_activated: "Account not activated. Check your email for the activation link"
     create_fail: "Invalid email/password combination"
+  flash_account_activation:
+    activated: "Account activated!"
+    invalid_link: "Invalid activation link"
   layouts:
     header:
       sample_app: "sample_app"
@@ -126,6 +131,14 @@ en:
       submit_button: "Log in"
       new_user: "New user? "
       sign_up: "Sign up now!"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      title: "Sample App"
+      intro_1: "Hi "
+      intro_2: ","
+      intro_3: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
   shared:
     error_messages:
       intro_1: "The form contains "
