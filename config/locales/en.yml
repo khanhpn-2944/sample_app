@@ -34,6 +34,13 @@ en:
   flash_user:
     welcome: "Welcome to the Sample App"
     not_found: "User not found"
+    log_in: "Please log in"
+    updated: "Profile updated"
+    deleted: "User deleted"
+    error: "Error"
+    user_not_found: "User not found"
+    not_user: "You are not the correct user"
+    not_admin: "You are not an admin"
   flash_session:
     create_fail: "Invalid email/password combination"
   layouts:
@@ -88,14 +95,34 @@ en:
       intro_1: "Contact the Ruby on Rails Tutorial about the sample app at the "
       intro_2: "."
   users:
+    index:
+      title: "All users"
     new:
       title: "Sign up"
-      confirmation_label: "Confirmation"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
       submit_button: "Create my account"
+    edit:
+      title: "Edit user"
+      h1: "Update your profile"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
+      submit_button: "Save changes"
+      change: "change"
+    user:
+      delete: "delete"
+      confirm: "You sure?"
   sessions:
     new:
       title: "Log in"
-      remember_me: "Remember me on this computer"
+      email: "Email"
+      password: "Password"
+      remember_me: "Remember me"
+      remember_me_span: "Remember me on this computer"
       submit_button: "Log in"
       new_user: "New user? "
       sign_up: "Sign up now!"

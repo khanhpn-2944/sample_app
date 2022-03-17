@@ -21,6 +21,10 @@ gem "jbuilder", "~> 2.7"
 
 gem "bcrypt", "~> 3.1.7"
 
+gem "faker", "~> 2.20"
+
+gem "pagy", "~> 5.10", ">= 5.10.1"
+
 gem "bootsnap", ">= 1.4.4", require: false
 
 gem "i18n", "~> 1.10"
