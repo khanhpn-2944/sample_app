@@ -38,7 +38,6 @@ en:
     updated: "Profile updated"
     deleted: "User deleted"
     error: "Error"
-    user_not_found: "User not found"
     not_user: "You are not the correct user"
     not_admin: "You are not an admin"
   flash_session:
@@ -48,6 +47,14 @@ en:
   flash_account_activation:
     activated: "Account activated!"
     invalid_link: "Invalid activation link"
+  flash_password_reset:
+    email_sent: "Email sent with password reset instructions"
+    email_not_found: "Email address not found"
+    not_valid: "You are not valid to reset password"
+    expired: "Password reset has expired"
+    has_reset: "Password has been reset"
+    update_error: "Something wrong"
+    not_found: "User not found"
   layouts:
     header:
       sample_app: "sample_app"
@@ -131,6 +138,7 @@ en:
       submit_button: "Log in"
       new_user: "New user? "
       sign_up: "Sign up now!"
+      forgot_password: "Forgot password?"
   user_mailer:
     account_activation:
       subject: "Account activation"
@@ -139,6 +147,23 @@ en:
       intro_2: ","
       intro_3: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
+    password_reset:
+      subject: "Password reset"
+      title: "Password reset"
+      intro_1: "To reset your password click the link below:"
+      reset_password: "Reset password"
+      intro_2: "This link will expire in two hours."
+      intro_3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  password_resets:
+    new:
+      title: "Forgot password"
+      email: "Email"
+      submit_button: "Submit"
+    edit:
+      title: "Reset password"
+      password: "Password"
+      confirmation: "Confirmation"
+      submit_button: "Update password"
   shared:
     error_messages:
       intro_1: "The form contains "

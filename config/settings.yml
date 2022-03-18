@@ -19,3 +19,4 @@ const:
   gravatar_default_size: 80
   gravatar_index_size: 50
   pagy_items: 20
+  password_reset_time: 2
