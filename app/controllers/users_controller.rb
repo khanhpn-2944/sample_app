@@ -22,9 +22,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "flash_user.welcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "flash_user.check_email"
+      redirect_to root_url
     else
       render :new
     end
@@ -56,7 +56,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params.require(:id)
     return if @user
 
-    flash[:warning] = "User not found"
+    flash[:warning] = t "flash_user.not_found"
     redirect_to root_url
   end
 
