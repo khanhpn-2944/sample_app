@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(index edit update)
+  before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :load_user, only: %i(show edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
@@ -9,8 +9,10 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user
-
+    if @user
+      @pagy, @microposts = pagy @user.microposts,
+                                items: Settings.const.pagy_items
+    end
     flash[:warning] = t "flash_user.not_found"
     redirect_to root_path
   end
@@ -63,14 +65,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
                                  :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "flash_user.log_in"
-    redirect_to login_url
   end
 
   def correct_user
