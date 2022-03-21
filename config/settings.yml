@@ -12,11 +12,16 @@ url:
   gravatar_email: "https://gravatar.com/emails"
 
 const:
-  maximum_name_length: 50
-  maximum_email_length: 255
+  maximum_name_length_50: 50
+  maximum_email_length_255: 255
   valid_email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
-  minimum_password_length: 6
+  minimum_password_length_6: 6
+  maximum_content_length_140: 140
   gravatar_default_size: 80
-  gravatar_index_size: 50
+  gravatar_size: 50
   pagy_items: 20
   password_reset_time: 2
+  image_size: 5
+  image_display_resize: 500
+  image_content_type: ["image/jpeg", "image/gif", "image/png"]
+  image_accept: "image/jpeg, image/gif, image/png"

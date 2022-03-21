@@ -29,9 +29,17 @@ gem "bootsnap", ">= 1.4.4", require: false
 
 gem "i18n", "~> 1.10"
 
+gem "i18n-js", "~> 3.9", ">= 3.9.1"
+
 gem "config", "~> 4.0"
 
 gem "figaro", "~> 1.2"
+
+gem "active_storage_validations", "~> 0.9.7"
+
+gem "image_processing", "~> 1.12", ">= 1.12.2"
+
+gem "mini_magick", "~> 4.11"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

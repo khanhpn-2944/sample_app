@@ -30,6 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  validates:
+    image_content_type: "must be a valid image format"
+    image_size: "should be less than 5MB"
   default_title: "Ruby on Rails Tutorial Sample App"
   flash_user:
     not_found: "User not found"
@@ -55,6 +58,11 @@ en:
     has_reset: "Password has been reset"
     update_error: "Something wrong"
     not_found: "User not found"
+  flash_microposts:
+    created: "Micropost created!"
+    cant_delete: "You cannot delete this post"
+    deleted: "Micropost deleted"
+    error: "Error"
   layouts:
     header:
       sample_app: "sample_app"
@@ -79,6 +87,7 @@ en:
       welcome: "Welcome to the Sample App"
       rails_tutorial: "Ruby on Rails Tutorial"
       sign_up: "Sign up now!"
+      feed: "Micropost Feed"
       intro_1: "This is the home page for the "
       intro_2: " sample application."
     help:
@@ -116,6 +125,9 @@ en:
       password: "Password"
       confirmation: "Confirmation"
       submit_button: "Create my account"
+    show:
+      intro_1: "Microposts ("
+      intro_2: ")"
     edit:
       title: "Edit user"
       h1: "Update your profile"
@@ -139,6 +151,12 @@ en:
       new_user: "New user? "
       sign_up: "Sign up now!"
       forgot_password: "Forgot password?"
+  microposts:
+    microposts:
+      delete: "delete"
+      confirm: "You sure?"
+      intro_1: "Posted "
+      intro_2: " ago."
   user_mailer:
     account_activation:
       subject: "Account activation"
@@ -168,3 +186,9 @@ en:
     error_messages:
       intro_1: "The form contains "
       intro_2: "."
+    micropost_form:
+      content_placeholder: "Compose new micropost..."
+      submit_button: "Post"
+      image_alert: "Maximum file size is 5MB. Please choose a smaller file."
+    user_info:
+      view_profile: "view my profile"
