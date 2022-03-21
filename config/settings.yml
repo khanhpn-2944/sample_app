@@ -19,6 +19,7 @@ const:
   maximum_content_length_140: 140
   gravatar_default_size: 80
   gravatar_size: 50
+  gravatar_follow_size: 30
   pagy_items: 20
   password_reset_time: 2
   image_size: 5

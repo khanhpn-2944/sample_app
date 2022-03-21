@@ -34,6 +34,9 @@ en:
     image_content_type: "must be a valid image format"
     image_size: "should be less than 5MB"
   default_title: "Ruby on Rails Tutorial Sample App"
+  follow_title:
+    following: "Following"
+    followers: "Followers"
   flash_user:
     not_found: "User not found"
     log_in: "Please log in"
@@ -63,6 +66,9 @@ en:
     cant_delete: "You cannot delete this post"
     deleted: "Micropost deleted"
     error: "Error"
+  flash_relationships:
+    follow_success: "Follow successfully"
+    unfollow_success: "Unfollow successfully"
   layouts:
     header:
       sample_app: "sample_app"
@@ -140,6 +146,13 @@ en:
     user:
       delete: "delete"
       confirm: "You sure?"
+    follow:
+      submit_button: "Follow"
+    unfollow:
+      submit_button: "Unfollow"
+    show_follow:
+      view_profile: "view my profile"
+      microposts: "Microposts:"
   sessions:
     new:
       title: "Log in"
@@ -192,3 +205,6 @@ en:
       image_alert: "Maximum file size is 5MB. Please choose a smaller file."
     user_info:
       view_profile: "view my profile"
+    stats:
+      following: "following"
+      followers: "followers"
