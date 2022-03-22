@@ -1,7 +1,8 @@
 class Micropost < ApplicationRecord
   belongs_to :user
 
-  scope :order_time, ->{order(created_at: :desc)}
+  scope :order_time, ->{order created_at: :desc}
+  scope :all_feed, ->(id){where user_id: id}
 
   validates :content, presence: true,
             length: {maximum: Settings.const.maximum_content_length_140}
